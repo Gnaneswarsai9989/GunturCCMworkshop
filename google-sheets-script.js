@@ -672,7 +672,7 @@ function createPassHtmlDocument(data) {
     '    <tr bgcolor="#0C101B" style="background:#0C101B;">' +
     '      <td class="banner-cell" bgcolor="#0C101B" style="padding:10px 24px;text-align:center;background:#0C101B;">' +
     '        <div class="workshop-headline" style="font-family:Arial,sans-serif;font-size:13.5px;font-weight:800;color:#FFFFFF;letter-spacing:0.04em;text-transform:uppercase;">META ADS &amp; AI FILM-MAKING LIVE WORKSHOP</div>' +
-    '        <div class="workshop-subline" style="font-size:10px;color:#94A3B8;font-weight:600;margin-top:2px;">Full Day Intensive Hands-On Training &bull; 9:00 AM – 6:00 PM &bull; Hotel Manasa Inn, Guntur</div>' +
+    '        <div class="workshop-subline" style="font-size:10px;color:#94A3B8;font-weight:600;margin-top:2px;">Full Day Intensive Hands-On Training &bull; 9:00 AM – 6:00 PM &bull; HOTEL SNR AURORA, Guntur</div>' +
     '      </td>' +
     '    </tr>' +
     '  </table>' +
@@ -744,7 +744,7 @@ function createPassHtmlDocument(data) {
     '    <div class="instructions-card" bgcolor="#181308" style="background:#181308;border:1px solid #382806;border-left:3px solid #F59E0B;border-radius:8px;padding:12px 16px;margin-bottom:4px;">' +
     '      <div class="instructions-title" style="font-family:Arial,sans-serif;font-size:10.5px;font-weight:800;color:#F59E0B;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;">&#9888; IMPORTANT INSTRUCTIONS FOR ATTENDEES</div>' +
     '      <ol class="instructions-list" style="padding-left:16px;">' +
-    '        <li style="font-size:10px;color:#D4AF37;line-height:1.55;margin-bottom:2px;"><strong style="color:#FDE68A;">Reporting Time:</strong> Arrive at Hotel Manasa Inn by 8:45 AM for registration verification and kit collection.</li>' +
+    '        <li style="font-size:10px;color:#D4AF37;line-height:1.55;margin-bottom:2px;"><strong style="color:#FDE68A;">Reporting Time:</strong> Arrive at HOTEL SNR AURORA by 8:45 AM for registration verification and kit collection.</li>' +
     '        <li style="font-size:10px;color:#D4AF37;line-height:1.55;margin-bottom:2px;"><strong style="color:#FDE68A;">Required Equipment:</strong> Bring smartphone with 15GB free storage and power bank (Laptop optional).</li>' +
     '        <li style="font-size:10px;color:#D4AF37;line-height:1.55;margin-bottom:2px;"><strong style="color:#FDE68A;">Food &amp; Hospitality:</strong> Unlimited buffet lunch &amp; evening high-tea snacks provided during workshop.</li>' +
     '        <li style="font-size:10px;color:#D4AF37;line-height:1.55;"><strong style="color:#FDE68A;">Official Certification:</strong> Creative Craft Media Certificate of Completion awarded at closing ceremony.</li>' +
