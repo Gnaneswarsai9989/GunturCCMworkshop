@@ -1,0 +1,3937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Craft Media –Meta Ads &amp; AI Film-Making Workshop | Guntur</title>
+  <meta name="description"
+    content="A 1-day exclusive practical workshop in Guntur on November 28, 2026 (Saturday). Master Meta Ads Live Campaign Creation, Claude AI, AI Filmmaking, and practical content workflows.">
+
+  <!-- Google Fonts: Outfit (Display) & Plus Jakarta Sans (Body) & JetBrains Mono (Codes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       DESIGN TOKENS & DARK LUXURY GLASSMORPHISM SYSTEM
+       ========================================================================== */
+    :root {
+      --bg-canvas: #000000;
+      --bg-surface: rgba(15, 15, 18, 0.75);
+      --bg-surface-hover: rgba(25, 25, 30, 0.88);
+      --bg-glass-card: rgba(12, 12, 15, 0.78);
+      --bg-glass-pill: rgba(255, 255, 255, 0.05);
+
+      --border-subtle: rgba(255, 255, 255, 0.09);
+      --border-medium: rgba(255, 255, 255, 0.16);
+      --border-active: rgba(59, 130, 246, 0.45);
+      --border-glow: rgba(56, 189, 248, 0.3);
+
+      --accent-primary: #3B82F6;
+      --accent-cyan: #06B6D4;
+      --accent-purple: #8B5CF6;
+      --accent-gradient: linear-gradient(135deg, #38BDF8 0%, #3B82F6 50%, #8B5CF6 100%);
+      --accent-gradient-text: linear-gradient(135deg, #7DD3FC 0%, #38BDF8 40%, #A78BFA 100%);
+      --accent-glow: rgba(56, 189, 248, 0.25);
+      --accent-glow-strong: rgba(59, 130, 246, 0.4);
+
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --text-dim: #64748B;
+      --danger: #EF4444;
+      --success: #10B981;
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-pill: 9999px;
+
+      --font-display: "Outfit", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-body: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+      --max-w: 1140px;
+      --shadow-glass: 0 20px 40px -15px rgba(0, 0, 0, 0.9), inset 0 1px 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: #000000;
+      color: var(--text-main);
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      line-height: 1.6;
+      background-color: #000000;
+      background-image: 
+        radial-gradient(circle 900px at 20% 10%, rgba(59, 130, 246, 0.10), transparent 65%),
+        radial-gradient(circle 700px at 80% 60%, rgba(139, 92, 246, 0.08), transparent 60%),
+        radial-gradient(circle 600px at 50% 90%, rgba(255, 107, 53, 0.06), transparent 60%);
+      background-attachment: fixed;
+      color: var(--text-main);
+      overflow-x: clip;
+      padding-top: 76px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: var(--font-display);
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    ::selection {
+      background: var(--accent-primary);
+      color: #fff;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent-cyan);
+      outline-offset: 3px;
+    }
+
+    .wrap {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* GRADIENT UTILITIES */
+    .gradient-text {
+      background: var(--accent-gradient-text);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* GLASS CARDS */
+    .glass-card {
+      background: rgba(8, 8, 12, 0.72);
+      backdrop-filter: blur(36px) saturate(220%) brightness(1.05);
+      -webkit-backdrop-filter: blur(36px) saturate(220%) brightness(1.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-lg);
+      box-shadow: 
+        0 24px 48px -16px rgba(0, 0, 0, 0.9),
+        inset 0 1px 1px 0 rgba(255, 255, 255, 0.12),
+        inset 0 -1px 0 rgba(255,255,255,0.03);
+      transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .glass-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+      pointer-events: none;
+    }
+
+    .glass-card::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(56,189,248,0.1), transparent);
+      pointer-events: none;
+    }
+
+    .glass-card:hover {
+      border-color: rgba(255,255,255,0.14);
+      transform: translateY(-3px);
+      box-shadow: 0 28px 60px -16px rgba(0, 0, 0, 0.85), inset 0 1px 1px 0 rgba(255, 255, 255, 0.2), 0 0 20px rgba(56,189,248,0.06);
+    }
+
+    /* ==========================================================================
+       NAVIGATION (ULTRA-MODERN LUXURY FROSTED GLASS BAR)
+       ========================================================================== */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.78);
+      backdrop-filter: blur(40px) saturate(220%) brightness(1.08);
+      -webkit-backdrop-filter: blur(40px) saturate(220%) brightness(1.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      box-shadow: 0 1px 0 rgba(255,255,255,0.05);
+      box-sizing: border-box;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      will-change: transform;
+      transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .nav.scrolled {
+      background: rgba(0, 0, 0, 0.95);
+      border-bottom-color: rgba(56, 189, 248, 0.22);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.85);
+    }
+
+    .nav::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(56, 189, 248, 0.3) 25%, rgba(139, 92, 246, 0.3) 75%, transparent 100%);
+      pointer-events: none;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+      padding: 0 24px;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      box-sizing: border-box;
+      gap: 16px;
+    }
+
+    .nav-logo {
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+      text-decoration: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .nav-logo:hover {
+      opacity: 0.92;
+      transform: translateY(-1px);
+    }
+
+    .nav-logo img {
+      height: 50px;
+      width: auto;
+      max-width: 250px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.7));
+    }
+
+    /* Live workshop indicator badge */
+    .nav-badge {
+      display: none;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-pill);
+      letter-spacing: 0.02em;
+    }
+
+    .nav-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #10B981;
+      box-shadow: 0 0 8px #10B981;
+      animation: navPulse 2s infinite ease-in-out;
+    }
+
+    @keyframes navPulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.4;
+        transform: scale(0.85);
+      }
+    }
+
+    .nav-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    /* Modern Glass Phone Button - Exactly 42px Height */
+    .nav-phone {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      height: 42px;
+      padding: 0 16px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1;
+      color: #E2E8F0;
+      white-space: nowrap;
+      box-sizing: border-box;
+      text-decoration: none;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .nav-phone svg {
+      color: var(--accent-cyan);
+      display: block;
+      flex-shrink: 0;
+      transition: transform 0.25s ease;
+    }
+
+    .nav-phone:hover {
+      color: #FFFFFF;
+      border-color: rgba(56, 189, 248, 0.4);
+      background: rgba(56, 189, 248, 0.09);
+      box-shadow: 0 4px 20px rgba(56, 189, 248, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+      transform: translateY(-1px);
+    }
+
+    .nav-phone:hover svg {
+      transform: scale(1.12);
+    }
+
+    /* Modern Register CTA Button - Exactly 42px Height Matching Phone Button */
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      height: 42px;
+      padding: 0 20px;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(135deg, #2563EB 0%, #3B82F6 45%, #06B6D4 100%);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      color: #FFFFFF;
+      white-space: nowrap;
+      box-sizing: border-box;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nav-cta::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .nav-cta:hover::before {
+      left: 100%;
+    }
+
+    .nav-cta svg {
+      display: block;
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 28px rgba(37, 99, 235, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+      border-color: rgba(255, 255, 255, 0.4);
+      color: #FFFFFF;
+    }
+
+    .nav-cta:hover svg {
+      transform: translateX(3px);
+    }
+
+    .nav-phone-short,
+    .nav-cta-short {
+      display: none;
+    }
+
+    @media (min-width: 900px) {
+      .nav-badge {
+        display: inline-flex;
+      }
+    }
+
+    @media (max-width: 680px) {
+      body {
+        padding-top: 66px;
+      }
+
+      .nav-inner {
+        padding: 0 16px;
+        height: 64px;
+        gap: 10px;
+      }
+
+      .nav-logo img {
+        height: 42px;
+        max-width: 175px;
+      }
+
+      .nav-actions {
+        gap: 10px;
+      }
+
+      .nav-phone {
+        height: 38px;
+        padding: 0 13px;
+        font-size: 12px;
+        gap: 6px;
+      }
+
+      .nav-cta {
+        height: 38px;
+        padding: 0 16px;
+        font-size: 12.5px;
+        gap: 6px;
+      }
+    }
+
+    @media (max-width: 440px) {
+      .nav-inner {
+        padding: 0 12px;
+        gap: 8px;
+      }
+
+      .nav-logo img {
+        height: 36px;
+        max-width: 130px;
+      }
+
+      .nav-actions {
+        gap: 6px;
+      }
+
+      .nav-phone {
+        height: 36px;
+        padding: 0 10px;
+        font-size: 11.5px;
+        gap: 5px;
+      }
+
+      .nav-cta {
+        height: 36px;
+        padding: 0 12px;
+        font-size: 12px;
+        gap: 4px;
+      }
+
+      .nav-phone-full,
+      .nav-cta-full {
+        display: none;
+      }
+
+      .nav-phone-short,
+      .nav-cta-short {
+        display: inline;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .nav-inner {
+        padding: 0 8px;
+        gap: 6px;
+      }
+
+      .nav-logo img {
+        height: 32px;
+        max-width: 110px;
+      }
+
+      .nav-phone {
+        height: 34px;
+        padding: 0 8px;
+        font-size: 11px;
+      }
+
+      .nav-cta {
+        height: 34px;
+        padding: 0 10px;
+        font-size: 11.5px;
+      }
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero {
+      padding: 72px 0 48px;
+      position: relative;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      background: rgba(6, 182, 212, 0.1);
+      border: 1px solid rgba(6, 182, 212, 0.25);
+      border-radius: var(--radius-pill);
+      padding: 6px 16px;
+      margin-bottom: 24px;
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.15);
+    }
+
+    .hero-badge-pulse {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent-cyan);
+      box-shadow: 0 0 8px var(--accent-cyan);
+      animation: pulseDot 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseDot {
+
+      0%,
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(1.4);
+        opacity: 0.4;
+      }
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 5.5vw, 62px);
+      letter-spacing: -0.035em;
+      margin-bottom: 20px;
+      line-height: 1.08;
+    }
+
+    .hero-desc {
+      font-size: clamp(16px, 2vw, 18.5px);
+      color: var(--text-muted);
+      line-height: 1.65;
+      max-width: 660px;
+      margin: 0 auto 36px;
+    }
+
+    /* 4 STATS ROW (FROM BROCHURE) */
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin: 0 auto 28px;
+      max-width: 780px;
+    }
+
+    .stat-card {
+      background: rgba(14, 14, 18, 0.75);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px 14px;
+      text-align: center;
+      backdrop-filter: blur(16px);
+      transition: all 0.2s;
+    }
+
+    .stat-card:hover {
+      border-color: var(--border-active);
+      background: rgba(59, 130, 246, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .stat-val {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.02em;
+      margin-bottom: 3px;
+    }
+
+    .stat-lbl {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-dim);
+    }
+
+    /* VENUE NOTICE PILL */
+    .venue-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13.5px;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      padding: 10px 22px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 32px;
+      max-width: 90%;
+    }
+
+    .venue-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-primary);
+      box-shadow: 0 0 10px var(--accent-primary);
+      flex-shrink: 0;
+    }
+
+    /* VENUE IMAGE CARD */
+    .venue-img-card {
+      display: block;
+      width: 100%;
+      max-width: 560px;
+      margin: 0 auto 32px;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(56, 189, 248, 0.12);
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    }
+
+    .venue-img-card:hover {
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(56, 189, 248, 0.3), 0 0 30px rgba(56, 189, 248, 0.12);
+    }
+
+    .venue-img-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .venue-img-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .venue-img-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.2) 55%, transparent 100%);
+      pointer-events: none;
+    }
+
+    .venue-img-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 18px 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .venue-img-name {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .venue-img-sub {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 3px;
+      font-weight: 500;
+    }
+
+    .venue-img-map-btn {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(56, 189, 248, 0.18);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #38BDF8;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 7px 14px;
+      border-radius: var(--radius-pill);
+      white-space: nowrap;
+    }
+
+    @media (max-width: 520px) {
+      .venue-img-card img {
+        height: 180px;
+      }
+
+      .venue-img-name {
+        font-size: 16px;
+      }
+    }
+
+    /* PRICE ROW & HERO CTA */
+    .hero-price-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .price-strike {
+      font-size: 20px;
+      color: var(--text-dim);
+      text-decoration: line-through;
+      text-decoration-color: var(--danger);
+      font-family: var(--font-display);
+      font-weight: 600;
+    }
+
+    .price-now {
+      font-family: var(--font-display);
+      font-size: 46px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--text-main);
+    }
+
+    .price-tag {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent-cyan);
+      background: rgba(6, 182, 212, 0.12);
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+      padding: 18px 46px;
+      border-radius: var(--radius-pill);
+      background: var(--accent-gradient);
+      color: #fff;
+      box-shadow: 0 10px 32px var(--accent-glow-strong), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+      transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 44px rgba(59, 130, 246, 0.65);
+      opacity: 0.96;
+    }
+
+    .cta-hint {
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    /* ==========================================================================
+       SECTION HEADINGS
+       ========================================================================== */
+    section {
+      padding: 56px 0;
+      position: relative;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 44px;
+    }
+
+    .section-head-tag {
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .section-head h2 {
+      font-size: clamp(28px, 4vw, 38px);
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+
+    .section-head p {
+      color: var(--text-muted);
+      font-size: 15.5px;
+      line-height: 1.65;
+    }
+
+    /* ==========================================================================
+       ANIMATED BACKGROUND ORBS & PARTICLES
+       ========================================================================== */
+    .bg-orbs {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .bg-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0;
+      animation: orbFloat 18s ease-in-out infinite;
+    }
+
+    .bg-orb-1 {
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(59,130,246,0.14) 0%, transparent 70%);
+      top: -200px; left: -150px;
+      animation-delay: 0s; animation-duration: 20s;
+    }
+
+    .bg-orb-2 {
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(139,92,246,0.10) 0%, transparent 70%);
+      top: 40%; right: -200px;
+      animation-delay: -6s; animation-duration: 24s;
+    }
+
+    .bg-orb-3 {
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(255,107,53,0.08) 0%, transparent 70%);
+      bottom: -100px; left: 30%;
+      animation-delay: -12s; animation-duration: 22s;
+    }
+
+    .bg-orb-4 {
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(6,182,212,0.08) 0%, transparent 70%);
+      top: 60%; left: 10%;
+      animation-delay: -4s; animation-duration: 26s;
+    }
+
+    @keyframes orbFloat {
+      0%   { opacity: 0; transform: translate(0,0) scale(1); }
+      10%  { opacity: 1; }
+      50%  { transform: translate(40px, -60px) scale(1.08); }
+      90%  { opacity: 1; }
+      100% { opacity: 0; transform: translate(0,0) scale(1); }
+    }
+
+    /* Grid texture overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ==========================================================================
+       ABOUT CREATIVE CRAFT MEDIA
+       ========================================================================== */
+    .about-card {
+      padding: 40px 36px;
+      text-align: center;
+      max-width: 860px;
+      margin: 0 auto;
+      background: linear-gradient(180deg, rgba(59, 130, 246, 0.08) 0%, rgba(14, 18, 29, 0.65) 100%);
+    }
+
+    .about-tagline {
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      margin-bottom: 14px;
+    }
+
+    .about-card h3 {
+      font-size: clamp(24px, 3.5vw, 32px);
+      margin-bottom: 16px;
+    }
+
+    .about-card p {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.75;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* ==========================================================================
+       CURRICULUM & 17 TOPICS
+       ========================================================================== */
+    .curr-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .curr-card {
+      padding: 36px 32px;
+      position: relative;
+    }
+
+    .curr-badge-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-md);
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+    }
+
+    .curr-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .curr-card p {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      line-height: 1.65;
+    }
+
+    .curr-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .curr-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14.5px;
+      color: var(--text-main);
+      font-weight: 500;
+    }
+
+    .curr-list-check {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: rgba(6, 182, 212, 0.15);
+      border: 1px solid var(--accent-cyan);
+      color: var(--accent-cyan);
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    /* 17 TOPICS PILL GRID */
+    .topics-header {
+      text-align: center;
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-dim);
+      margin-bottom: 22px;
+    }
+
+    .topics-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .topic-pill {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 18px;
+      background: rgba(14, 14, 18, 0.75);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      transition: all 0.2s;
+    }
+
+    .topic-pill:hover {
+      background: rgba(59, 130, 246, 0.08);
+      border-color: var(--border-active);
+      transform: translateX(4px);
+    }
+
+    .topic-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-cyan);
+      box-shadow: 0 0 10px var(--accent-cyan);
+      flex-shrink: 0;
+    }
+
+    .topic-text {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-main);
+      letter-spacing: -0.01em;
+    }
+
+    /* ==========================================================================
+       WHAT TO BRING & DELIVERABLES
+       ========================================================================== */
+    .dual-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .bring-card,
+    .recv-card {
+      padding: 32px 28px;
+    }
+
+    .card-head-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .bring-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .bring-item:last-child {
+      border-bottom: none;
+    }
+
+    .bring-label {
+      font-size: 15px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .badge-status {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 5px 12px;
+      border-radius: var(--radius-pill);
+      text-transform: uppercase;
+    }
+
+    .badge-status.mandatory {
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      color: #F87171;
+    }
+
+    .badge-status.recommended {
+      background: rgba(59, 130, 246, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.35);
+      color: #60A5FA;
+    }
+
+    .badge-status.optional {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+    }
+
+    .recv-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .recv-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .lunch-callout {
+      padding: 14px 22px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-subtle);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       WHO IS THIS WORKSHOP FOR?
+       ========================================================================== */
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .audience-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 20px;
+      background: rgba(14, 14, 18, 0.75);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      transition: all 0.2s;
+    }
+
+    .audience-card:hover {
+      background: rgba(59, 130, 246, 0.08);
+      border-color: var(--border-active);
+      transform: translateY(-2px);
+    }
+
+    .audience-emoji {
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .audience-name {
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    /* ==========================================================================
+       SCHEDULE SECTION
+       ========================================================================== */
+    .schedule-card {
+      padding: 8px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .schedule-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px 28px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .schedule-row:last-child {
+      border-bottom: none;
+    }
+
+    .sched-label {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .sched-val {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-main);
+      text-align: right;
+    }
+
+    /* ==========================================================================
+       FAQ SECTION
+       ========================================================================== */
+    .faq-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .faq-card {
+      padding: 26px 30px;
+    }
+
+    .faq-q {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .faq-q-badge {
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 8px;
+      border-radius: var(--radius-sm);
+      background: rgba(59, 130, 246, 0.2);
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      color: var(--accent-cyan);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .faq-a {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      padding-left: 36px;
+    }
+
+    /* ==========================================================================
+       VALUE BANNER
+       ========================================================================== */
+    .banner-card {
+      margin: 48px 0;
+      padding: 48px 32px;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.12) 0%, rgba(59, 130, 246, 0.18) 50%, rgba(139, 92, 246, 0.15) 100%);
+      border: 1px solid var(--border-active);
+      text-align: center;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+    }
+
+    .banner-tag {
+      display: inline-block;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      background: rgba(6, 182, 212, 0.15);
+      border: 1px solid rgba(6, 182, 212, 0.35);
+      padding: 6px 18px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 18px;
+    }
+
+    .banner-card h3 {
+      font-size: clamp(24px, 4vw, 36px);
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+    }
+
+    .banner-pillars {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 22px;
+      font-size: 14.5px;
+      color: var(--text-muted);
+      margin: 18px 0 28px;
+    }
+
+    .banner-pillars span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ==========================================================================
+       FORMS & PAYMENT SECTION
+       ========================================================================== */
+    .form-box {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 40px 32px;
+    }
+
+    .form-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0 20px;
+    }
+
+    .form-group {
+      margin-bottom: 22px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 8px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 14px 18px;
+      font-family: var(--font-body);
+      font-size: 15px;
+      background: rgba(6, 7, 10, 0.6);
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      transition: all 0.2s;
+    }
+
+    .form-control:focus {
+      border-color: var(--accent-primary);
+      background: rgba(59, 130, 246, 0.05);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+      outline: none;
+    }
+
+    select.form-control {
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' stroke='%2338BDF8' stroke-width='2' fill='none' stroke-linecap='round'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 18px center;
+      padding-right: 44px;
+    }
+
+    select.form-control option {
+      background: #0B0E14;
+      color: #F8FAFC;
+    }
+
+    /* RADIO GROUPS */
+    .radio-row {
+      display: flex;
+      gap: 12px;
+    }
+
+    .radio-tile {
+      flex: 1;
+      position: relative;
+    }
+
+    .radio-tile input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .radio-tile label {
+      display: block;
+      text-align: center;
+      cursor: pointer;
+      padding: 13px 14px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      transition: all 0.2s;
+      margin: 0;
+    }
+
+    .radio-tile input:checked+label {
+      border-color: var(--accent-primary);
+      color: #fff;
+      background: rgba(59, 130, 246, 0.15);
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 16px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: -0.01em;
+      background: var(--accent-gradient);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      box-shadow: 0 10px 32px var(--accent-glow-strong);
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn-submit:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 40px rgba(59, 130, 246, 0.6);
+    }
+
+    .btn-submit:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+    }
+
+    /* PAYMENT SECTION */
+    .pay-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .qr-card-box {
+      padding: 32px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qr-card-box img {
+      border-radius: var(--radius-lg);
+      max-width: 250px;
+      width: 100%;
+      margin: 0 auto 18px;
+      border: 1px solid var(--border-medium);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    .qr-amount-pill {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .upi-info-card {
+      padding: 32px;
+    }
+
+    .upi-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: rgba(6, 7, 10, 0.7);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 13px 18px;
+      margin: 12px 0;
+    }
+
+    .upi-box span {
+      font-family: var(--font-mono);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--accent-cyan);
+    }
+
+    .copy-button {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 7px 16px;
+      border-radius: var(--radius-pill);
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .copy-button:hover {
+      background: var(--accent-primary);
+      border-color: var(--accent-primary);
+      color: #fff;
+    }
+
+    .upi-alert {
+      font-size: 13px;
+      color: #FDA4AF;
+      background: rgba(244, 63, 94, 0.08);
+      border: 1px solid rgba(244, 63, 94, 0.25);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      margin: 16px 0 24px;
+      line-height: 1.6;
+    }
+
+    /* UPLOAD DROPZONE */
+    .upload-zone {
+      margin: 20px 0 24px;
+      text-align: left;
+    }
+
+    .dropzone-box {
+      border: 2px dashed rgba(59, 130, 246, 0.4);
+      background: rgba(6, 7, 10, 0.5);
+      border-radius: var(--radius-md);
+      padding: 24px 18px;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.2s;
+    }
+
+    .dropzone-box:hover,
+    .dropzone-box.dragover {
+      border-color: var(--accent-cyan);
+      background: rgba(59, 130, 246, 0.1);
+      transform: scale(1.005);
+    }
+
+    .dropzone-icon {
+      font-size: 32px;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .dropzone-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .dropzone-title span {
+      color: var(--accent-cyan);
+      text-decoration: underline;
+    }
+
+    .dropzone-hint {
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+
+    .dropzone-input {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+    }
+
+    .upload-preview {
+      display: none;
+      align-items: center;
+      gap: 14px;
+      background: rgba(14, 18, 29, 0.8);
+      border: 1px solid var(--border-active);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      margin-top: 10px;
+    }
+
+    .preview-thumb {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      object-fit: cover;
+      border: 1px solid var(--border-subtle);
+      background: #000;
+      flex-shrink: 0;
+    }
+
+    .preview-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .preview-filename {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .preview-filesize {
+      font-size: 12px;
+      color: var(--accent-cyan);
+      margin-top: 2px;
+      font-weight: 600;
+    }
+
+    .preview-remove {
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.35);
+      color: #F87171;
+      border-radius: var(--radius-pill);
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .preview-remove:hover {
+      background: rgba(239, 68, 68, 0.3);
+      color: #fff;
+    }
+
+    /* ==========================================================================
+       SUCCESS CONFIRMATION MODAL
+       ========================================================================== */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      z-index: 99999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+      opacity: 1;
+    }
+
+    .modal-card {
+      background: #0B0E17;
+      border: 1px solid var(--border-active);
+      border-radius: var(--radius-xl);
+      max-width: 520px;
+      width: 100%;
+      padding: 36px 30px;
+      text-align: center;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(59, 130, 246, 0.3);
+      position: relative;
+      transform: scale(0.95);
+      transition: transform 0.3s ease;
+    }
+
+    .modal-overlay.open .modal-card {
+      transform: scale(1);
+    }
+
+    .modal-badge {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.15);
+      border: 2px solid var(--success);
+      color: var(--success);
+      font-size: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      box-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
+    }
+
+    .modal-card h3 {
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+
+    .modal-subtitle {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .reg-id-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+
+    .reg-id-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 0;
+      font-size: 13.5px;
+    }
+
+    .reg-id-label {
+      color: var(--text-dim);
+      font-weight: 600;
+    }
+
+    .reg-id-value {
+      color: var(--text-main);
+      font-weight: 700;
+      font-family: var(--font-mono);
+    }
+
+    .reg-id-highlight {
+      font-size: 17px;
+      color: var(--accent-cyan);
+    }
+
+    .modal-btn-close {
+      width: 100%;
+      padding: 14px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 15px;
+      background: var(--accent-gradient);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      box-shadow: 0 8px 24px var(--accent-glow);
+    }
+
+    /* TOAST BANNER */
+    .toast-banner {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(120px);
+      background: rgba(14, 18, 29, 0.95);
+      border: 1px solid var(--border-active);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: var(--radius-pill);
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-main);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px var(--accent-glow);
+      z-index: 10000;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.3s;
+      max-width: 90vw;
+      text-align: center;
+    }
+
+    .toast-banner.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    /* ==========================================================================
+       POPUP NOTIFICATION (CENTERED ON SCREEN)
+       ========================================================================== */
+    #popupOverlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9998;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      opacity: 0;
+      animation: popOverlayIn 0.4s ease 0.3s forwards;
+    }
+
+    @keyframes popOverlayIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    #popupOverlay.hiding {
+      animation: popOverlayOut 0.35s ease forwards;
+    }
+
+    @keyframes popOverlayOut {
+      to {
+        opacity: 0;
+      }
+    }
+
+    #popupNotif {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      z-index: 9999;
+      width: min(440px, calc(100vw - 36px));
+      transform: translate(-50%, -50%) scale(0.9);
+      opacity: 0;
+      animation: popCenterIn 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+    }
+
+    @keyframes popCenterIn {
+      0% {
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+    }
+
+    #popupNotif.hiding {
+      animation: popCenterOut 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes popCenterOut {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0;
+      }
+    }
+
+    .popup-card {
+      position: relative;
+      overflow: hidden;
+      background: rgba(12, 12, 16, 0.94);
+      border: 1px solid var(--border-active);
+      border-radius: var(--radius-xl);
+      padding: 24px 22px 20px;
+      backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(59, 130, 246, 0.25);
+    }
+
+    .popup-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .popup-logo {
+      height: 52px;
+      width: auto;
+      object-fit: contain;
+      object-position: left center;
+    }
+
+    .popup-time {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .popup-close {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      transition: all 0.2s;
+    }
+
+    .popup-close:hover {
+      background: rgba(239, 68, 68, 0.25);
+      border-color: rgba(239, 68, 68, 0.4);
+      color: #fff;
+    }
+
+    .popup-title {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      color: var(--text-main);
+    }
+
+    .popup-body {
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .popup-body strong {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    .popup-body .item-line {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .popup-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .popup-tag {
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .popup-tag:hover {
+      background: var(--accent-primary);
+      border-color: var(--accent-primary);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .popup-register-btn {
+      display: block;
+      width: 100%;
+      padding: 13px;
+      font-family: var(--font-display);
+      font-size: 14.5px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      text-align: center;
+      text-decoration: none;
+      background: var(--accent-gradient);
+      color: #fff;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 8px 24px var(--accent-glow-strong);
+      transition: all 0.2s;
+    }
+
+    .popup-register-btn:hover {
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.6);
+      transform: translateY(-1px);
+    }
+
+    .popup-progress {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+      overflow: hidden;
+    }
+
+    .popup-progress-fill {
+      height: 100%;
+      background: var(--accent-gradient);
+      width: 100%;
+      transform-origin: left;
+      animation: progressDrain 6.5s linear 0.8s forwards;
+    }
+
+    @keyframes progressDrain {
+      to {
+        transform: scaleX(0);
+      }
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 48px 0 36px;
+      text-align: center;
+      background: rgba(6, 7, 10, 0.85);
+      backdrop-filter: blur(20px);
+    }
+
+    .footer-logo {
+      height: 42px;
+      margin: 0 auto 16px;
+      opacity: 0.9;
+    }
+
+    .footer-title {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .footer-sub {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .footer-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+      padding: 8px 18px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-pill);
+      transition: all 0.2s;
+    }
+
+    .footer-link:hover {
+      background: var(--accent-primary);
+      border-color: var(--accent-primary);
+      color: #fff;
+    }
+
+    .admin-export-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--text-dim);
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      margin-top: 14px;
+      transition: all 0.2s;
+    }
+
+    .admin-export-btn:hover {
+      color: var(--text-muted);
+      border-color: var(--border-subtle);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (min-width: 640px) {
+      .stat-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .topics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .audience-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .dual-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .form-grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 860px) {
+      .hero {
+        padding: 96px 0 64px;
+      }
+
+      .curr-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .pay-container {
+        grid-template-columns: 0.85fr 1.15fr;
+        align-items: stretch;
+      }
+    }
+
+    /* ==========================================================================
+       CLAUDE AI TOPIC HIGHLIGHT
+       ========================================================================== */
+    .claude-highlight {
+      display: inline-block;
+      position: relative;
+      background: linear-gradient(135deg, #FF6B35 0%, #F7931E 40%, #FFD700 80%, #FF6B35 100%);
+      background-size: 300% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: claudeShimmer 3s linear infinite;
+      filter: drop-shadow(0 0 20px rgba(255,107,53,0.7)) drop-shadow(0 0 50px rgba(247,147,30,0.4));
+      font-weight: 800;
+    }
+
+    @keyframes claudeShimmer {
+      0% { background-position: 0% center; }
+      100% { background-position: 300% center; }
+    }
+
+    .claude-spotlight-section {
+      position: relative;
+      padding: 70px 0;
+      overflow: hidden;
+    }
+
+    .claude-spotlight-section::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(255,107,53,0.12) 0%, transparent 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .claude-hero-card {
+      position: relative;
+      background: linear-gradient(135deg, rgba(255,107,53,0.08) 0%, rgba(12,12,16,0.92) 50%, rgba(247,147,30,0.06) 100%);
+      border: 1px solid rgba(255,107,53,0.35);
+      border-radius: var(--radius-xl);
+      padding: 48px 40px;
+      text-align: center;
+      box-shadow: 0 0 60px rgba(255,107,53,0.1), 0 24px 60px rgba(0,0,0,0.6);
+      backdrop-filter: blur(28px) saturate(180%);
+      -webkit-backdrop-filter: blur(28px) saturate(180%);
+      overflow: hidden;
+      z-index: 1;
+      margin-bottom: 36px;
+    }
+
+    .claude-hero-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(255,107,53,0.6), rgba(255,215,0,0.8), rgba(255,107,53,0.6), transparent);
+      animation: claudeTopBorder 3s ease-in-out infinite;
+    }
+
+    @keyframes claudeTopBorder {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+
+    .claude-logo-wrap {
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(255,107,53,0.2), rgba(247,147,30,0.15));
+      border: 1.5px solid rgba(255,107,53,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin: 0 auto 20px;
+      box-shadow: 0 0 30px rgba(255,107,53,0.3);
+      animation: claudePulse 2.5s ease-in-out infinite;
+    }
+
+    @keyframes claudePulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(255,107,53,0.3); transform: scale(1); }
+      50% { box-shadow: 0 0 40px rgba(255,107,53,0.6); transform: scale(1.04); }
+    }
+
+    .claude-feat-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    @media (min-width: 640px) {
+      .claude-feat-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .claude-feat-item {
+      background: rgba(255,107,53,0.06);
+      border: 1px solid rgba(255,107,53,0.2);
+      border-radius: var(--radius-lg);
+      padding: 24px 20px;
+      text-align: center;
+      transition: all 0.25s ease;
+    }
+
+    .claude-feat-item:hover {
+      border-color: rgba(255,107,53,0.5);
+      background: rgba(255,107,53,0.1);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(255,107,53,0.15);
+    }
+
+    .claude-feat-icon {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .claude-feat-item h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #FF9B6B;
+      margin-bottom: 8px;
+    }
+
+    .claude-feat-item p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .claude-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, rgba(255,107,53,0.18), rgba(247,147,30,0.12));
+      border: 1px solid rgba(255,107,53,0.45);
+      border-radius: var(--radius-pill);
+      padding: 7px 20px;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FF9B6B;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(255,107,53,0.2);
+    }
+
+    /* ==========================================================================
+       GUNTUR CITY IMAGES SECTION
+       ========================================================================== */
+    .guntur-gallery-section {
+      padding: 60px 0;
+      position: relative;
+    }
+
+    .guntur-img-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    @media (min-width: 640px) {
+      .guntur-img-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (min-width: 860px) {
+      .guntur-img-grid { grid-template-columns: repeat(3, 1fr); }
+      .guntur-img-grid .guntur-img-featured {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+    }
+
+    .guntur-img-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: rgba(14,14,18,0.8);
+    }
+
+    .guntur-img-card:hover {
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.6), 0 0 20px rgba(56,189,248,0.1);
+    }
+
+    .guntur-img-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .guntur-img-featured img {
+      height: 230px;
+    }
+
+    @media (min-width: 860px) {
+      .guntur-img-featured img { height: 100%; min-height: 310px; }
+    }
+
+    .guntur-img-card:hover img { transform: scale(1.06); }
+
+    .guntur-img-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .guntur-img-label {
+      position: absolute;
+      bottom: 10px;
+      left: 12px;
+      right: 12px;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.8);
+    }
+
+    .guntur-img-placeholder {
+      width: 100%;
+      height: 160px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(139,92,246,0.08));
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .guntur-img-featured .guntur-img-placeholder { height: 310px; }
+
+    .guntur-img-placeholder span {
+      font-size: 32px;
+    }
+
+    .guntur-img-placeholder p {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    /* ==========================================================================
+       META ADS HIGHLIGHT CLASS (HERO)
+       ========================================================================== */
+    .meta-highlight {
+      display: inline-block;
+      position: relative;
+      color: #000;
+      background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: metaShimmer 2.5s linear infinite;
+      filter: drop-shadow(0 0 18px rgba(255, 215, 0, 0.75)) drop-shadow(0 0 40px rgba(255, 165, 0, 0.45));
+      font-style: italic;
+    }
+
+    @keyframes metaShimmer {
+      0% {
+        background-position: 0% center;
+      }
+
+      100% {
+        background-position: 200% center;
+      }
+    }
+
+    .meta-highlight-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 0;
+      position: relative;
+    }
+
+    .meta-highlight-wrap::before {
+      content: '';
+      position: absolute;
+      inset: -6px -14px;
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.18), rgba(255, 140, 0, 0.12));
+      border: 1.5px solid rgba(255, 215, 0, 0.55);
+      border-radius: 10px;
+      z-index: -1;
+      animation: metaGlowPulse 2s ease-in-out infinite;
+    }
+
+    @keyframes metaGlowPulse {
+
+      0%,
+      100% {
+        box-shadow: 0 0 16px rgba(255, 215, 0, 0.35), 0 0 40px rgba(255, 165, 0, 0.2);
+      }
+
+      50% {
+        box-shadow: 0 0 32px rgba(255, 215, 0, 0.65), 0 0 70px rgba(255, 165, 0, 0.35);
+      }
+    }
+
+    /* ==========================================================================
+       CURRICULUM CARD IMAGES
+       ========================================================================== */
+    .curr-img-wrap {
+      position: relative;
+      width: calc(100% + 64px);
+      margin: -36px -32px 24px;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+      overflow: hidden;
+      height: 200px;
+    }
+
+    .curr-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .glass-card.curr-card:hover .curr-img {
+      transform: scale(1.05);
+    }
+
+    .curr-img-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.1) 60%, transparent 100%);
+      pointer-events: none;
+    }
+
+    /* ==========================================================================
+       META ADS SPOTLIGHT SECTION
+       ========================================================================== */
+    .meta-spotlight-img-wrap {
+      position: relative;
+      width: 100%;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      margin-bottom: 32px;
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      box-shadow: 0 0 60px rgba(255, 215, 0, 0.15), 0 24px 60px rgba(0, 0, 0, 0.7);
+    }
+
+    .meta-spotlight-img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    .meta-spotlight-img-wrap:hover .meta-spotlight-img {
+      transform: scale(1.03);
+    }
+
+    .meta-spotlight-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.82) 0%, rgba(255, 140, 0, 0.04) 55%, transparent 100%);
+      pointer-events: none;
+    }
+
+    .meta-spotlight-badge {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.25), rgba(255, 140, 0, 0.2));
+      border: 1px solid rgba(255, 215, 0, 0.55);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      color: #FFD700;
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 9px 24px;
+      border-radius: var(--radius-pill);
+      white-space: nowrap;
+      text-align: center;
+    }
+
+    /* META FEATURE CARDS */
+    .meta-feat-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    @media (min-width: 640px) {
+      .meta-feat-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .meta-spotlight-img {
+        height: 420px;
+      }
+
+      .curr-img-wrap {
+        height: 220px;
+      }
+    }
+
+    .meta-feat-card {
+      background: rgba(14, 14, 18, 0.8);
+      border: 1px solid rgba(255, 215, 0, 0.15);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      text-align: center;
+      transition: all 0.25s ease;
+    }
+
+    .meta-feat-card:hover {
+      border-color: rgba(255, 215, 0, 0.4);
+      background: rgba(255, 215, 0, 0.05);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(255, 215, 0, 0.1);
+    }
+
+    .meta-feat-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin: 0 auto 16px;
+    }
+
+    .meta-feat-card h4 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .meta-feat-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ==========================================================================
+       STATIC / STICKY BOTTOM BAR ("REGISTER NOW" FLOATING AT BOTTOM)
+       ========================================================================== */
+    body {
+      padding-bottom: 88px;
+    }
+
+    .static-bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 990;
+      background: rgba(10, 10, 15, 0.96);
+      backdrop-filter: blur(20px) saturate(190%);
+      -webkit-backdrop-filter: blur(20px) saturate(190%);
+      border-top: 1px solid rgba(255, 215, 0, 0.4);
+      box-shadow: 0 -8px 36px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 215, 0, 0.15);
+      padding: 13px 24px;
+      box-sizing: border-box;
+    }
+
+    .static-bottom-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .static-bottom-info {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      min-width: 0;
+    }
+
+    .static-bottom-title {
+      font-family: var(--font-display);
+      font-size: 15.5px;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .static-bottom-badge {
+      background: rgba(255, 215, 0, 0.15);
+      color: #FFD700;
+      border: 1px solid rgba(255, 215, 0, 0.4);
+      font-size: 11px;
+      padding: 1px 9px;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .static-bottom-sub {
+      font-size: 13px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .static-bottom-sub strong {
+      color: #FFD700;
+      font-weight: 800;
+      font-size: 14.5px;
+    }
+
+    /* ENLARGED REGISTER NOW BUTTON */
+    .static-bottom-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF8C00 100%);
+      color: #000;
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 800;
+      padding: 15px 36px;
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      box-shadow: 0 4px 24px rgba(255, 215, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.4) inset;
+      transition: all 0.22s ease;
+      white-space: nowrap;
+      flex-shrink: 0;
+      letter-spacing: -0.01em;
+      animation: pulseGoldGlow 2.8s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulseGoldGlow {
+      0% {
+        box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+      }
+
+      100% {
+        box-shadow: 0 8px 32px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.5);
+      }
+    }
+
+    .static-bottom-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 10px 36px rgba(255, 215, 0, 0.85), 0 0 28px rgba(255, 215, 0, 0.6);
+      color: #000;
+    }
+
+    .static-bottom-btn:active {
+      transform: translateY(0) scale(0.98);
+    }
+
+    .direct-reg-card {
+      padding: 56px 36px;
+    }
+
+    .cta-button-large {
+      font-size: 19px;
+      font-weight: 800;
+      padding: 20px 52px;
+      box-shadow: 0 10px 34px rgba(59, 130, 246, 0.5);
+    }
+
+    /* ==========================================================================
+       MOBILE ALIGNMENTS & RESPONSIVE REFINEMENTS
+       ========================================================================== */
+    @media (max-width: 680px) {
+      body {
+        padding-bottom: 86px;
+      }
+
+      /* Hero section mobile alignment */
+      .hero {
+        padding: 48px 0 36px;
+      }
+
+      .hero h1 {
+        font-size: clamp(30px, 8vw, 44px);
+        margin-bottom: 16px;
+      }
+
+      .meta-highlight-wrap {
+        max-width: 100%;
+      }
+
+      .meta-highlight-wrap::before {
+        inset: -4px -10px;
+        border-radius: 8px;
+      }
+
+      .hero-desc {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 26px;
+        padding: 0 6px;
+      }
+
+      .stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 24px;
+      }
+
+      .stat-card {
+        padding: 13px 8px;
+      }
+
+      .stat-val {
+        font-size: 20px;
+      }
+
+      .stat-lbl {
+        font-size: 11px;
+      }
+
+      .venue-pill {
+        font-size: 12.5px;
+        padding: 8px 16px;
+        margin-bottom: 24px;
+        max-width: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .venue-img-card {
+        margin-bottom: 24px;
+      }
+
+      .venue-img-card img {
+        height: 185px;
+      }
+
+      .venue-img-info {
+        padding: 14px 16px;
+      }
+
+      .hero-price-box {
+        gap: 10px;
+        margin-bottom: 22px;
+      }
+
+      .price-now {
+        font-size: 34px;
+      }
+
+      /* Enlarged full-width CTA buttons on mobile */
+      .cta-button {
+        width: 100%;
+        max-width: 360px;
+        padding: 17px 28px;
+        font-size: 17.5px;
+        font-weight: 800;
+        box-sizing: border-box;
+      }
+
+      .cta-button-large {
+        width: 100%;
+        max-width: 360px;
+        padding: 18px 30px;
+        font-size: 17.5px;
+      }
+
+      /* Curriculum cards mobile alignment */
+      .curr-card {
+        padding: 24px 18px;
+      }
+
+      .curr-img-wrap {
+        width: calc(100% + 36px);
+        margin: -24px -18px 18px;
+        height: 185px;
+      }
+
+      .curr-card h3 {
+        font-size: 20px;
+      }
+
+      .curr-card p {
+        font-size: 13.5px;
+      }
+
+      /* Meta ads spotlight mobile alignment */
+      .meta-spotlight-img {
+        height: 220px;
+      }
+
+      .meta-spotlight-badge {
+        white-space: normal;
+        width: calc(100% - 28px);
+        max-width: 380px;
+        font-size: 12px;
+        padding: 8px 14px;
+        bottom: 12px;
+        line-height: 1.35;
+      }
+
+      .meta-feat-card {
+        padding: 22px 18px;
+      }
+
+      /* Schedule timetable mobile alignment */
+      .schedule-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        padding: 14px 18px;
+      }
+
+      .sched-val {
+        text-align: left;
+        font-size: 15px;
+      }
+
+      /* Cards & Banner padding */
+      .direct-reg-card {
+        padding: 36px 20px;
+      }
+
+      .banner-card {
+        padding: 36px 18px;
+        margin: 32px 0;
+      }
+
+      .banner-pillars {
+        gap: 8px 14px;
+        font-size: 13.5px;
+      }
+
+      /* Static bottom bar mobile styles - ENLARGED BUTTON */
+      .static-bottom-bar {
+        padding: 11px 16px;
+        padding-bottom: calc(11px + env(safe-area-inset-bottom, 0px));
+      }
+
+      .static-bottom-inner {
+        gap: 12px;
+      }
+
+      .static-bottom-title {
+        font-size: 14.5px;
+        font-weight: 800;
+      }
+
+      .static-bottom-badge {
+        display: none;
+      }
+
+      .static-bottom-sub {
+        font-size: 12px;
+        gap: 6px;
+      }
+
+      .static-bottom-sub strong {
+        font-size: 14.5px;
+      }
+
+      .static-bottom-btn {
+        padding: 14px 26px;
+        font-size: 16px;
+        font-weight: 800;
+        min-height: 48px;
+        box-shadow: 0 4px 20px rgba(255, 215, 0, 0.6);
+      }
+    }
+
+    @media (max-width: 440px) {
+      .static-bottom-bar {
+        padding: 10px 14px;
+        padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+      }
+
+      .static-bottom-inner {
+        gap: 10px;
+      }
+
+      .static-bottom-title {
+        font-size: 13.5px;
+      }
+
+      .static-bottom-sub .static-sub-extra {
+        display: none;
+      }
+
+      .static-bottom-btn {
+        padding: 12px 20px;
+        font-size: 15px;
+        font-weight: 800;
+      }
+
+      .venue-img-name {
+        font-size: 15.5px;
+      }
+
+      .venue-img-map-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+      }
+    }
+  
+    /* ── Landmark Cards ── */
+    .landmark-card-inner {
+      width:100%; height:100%; display:flex; flex-direction:column;
+      align-items:center; justify-content:center; gap:10px;
+      position:relative; overflow:hidden; padding:20px; box-sizing:border-box;
+    }
+    .landmark-glow { position:absolute; inset:0; pointer-events:none; }
+    .landmark-emoji { font-size:50px; position:relative; z-index:1; filter:drop-shadow(0 0 16px rgba(255,255,255,0.3)); }
+    .landmark-title { font-family:var(--font-display,'Clash Display',sans-serif); font-size:16px; font-weight:800; color:#fff; text-align:center; position:relative; z-index:1; letter-spacing:-0.02em; }
+    .landmark-sub { font-size:12px; color:rgba(255,255,255,0.6); position:relative; z-index:1; text-align:center; }
+    .landmark-dot { position:absolute; border-radius:50%; animation:navPulse 2s infinite; }
+    .dot-1 { width:5px;height:5px; background:#38BDF8; box-shadow:0 0 10px #38BDF8; top:18%; left:12%; animation-delay:0s; }
+    .dot-2 { width:4px;height:4px; background:#A78BFA; box-shadow:0 0 8px #A78BFA; top:72%; right:16%; animation-delay:0.6s; }
+    .dot-3 { width:6px;height:6px; background:#FFD700; box-shadow:0 0 12px #FFD700; bottom:18%; left:28%; animation-delay:1.2s; }
+  
+  </style>
+</head>
+
+<body>
+
+  <!-- Animated Background Orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+    <div class="bg-orb bg-orb-4"></div>
+  </div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" title="Creative Craft Media">
+        <img src="logo.png" alt="Creative Craft Media">
+      </a>
+
+      <!-- Live Workshop Status Badge -->
+      <div class="nav-badge">
+        <span class="nav-badge-dot"></span>
+        <span>Guntur &bull; Nov 28, 2026</span>
+      </div>
+
+      <div class="nav-actions">
+        <a href="tel:8328544117" class="nav-phone" title="Call for workshop queries">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          <span class="nav-phone-full">8328544117</span>
+          <span class="nav-phone-short">Call</span>
+        </a>
+
+        <a href="register.html" class="nav-cta" title="Register for Guntur Workshop">
+          <span class="nav-cta-full">Register Now</span>
+          <span class="nav-cta-short">Register</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <header class="hero">
+    <div class="wrap hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-pulse"></span>
+        <span>Guntur Exclusive &bull; 1-Day Practical Workshop</span>
+      </div>
+
+      <h1><span class="meta-highlight-wrap"><span class="meta-highlight">Meta Ads</span></span><br><span
+          style="font-size: clamp(16px, 2.5vw, 26px); font-weight: 600; letter-spacing: -0.01em; opacity: 0.75; display: inline-block; margin-top: 6px;">&amp;
+          <span class="gradient-text" style="font-weight:600;">AI Film-Making</span> Workshop</span></h1>
+      <p class="hero-desc">
+        A hands-on, exclusive 1-day workshop in <strong style="color:#fff;">Guntur</strong> –Master <strong style="color:#fff;">Meta Ads Live Campaign
+          Creation</strong>, <strong style="color:#FF9B6B;">Claude AI Tools</strong>, and <strong style="color:#fff;">AI Film-Making</strong> with real tools, practical
+        workflows, and direct industry experience.
+      </p>
+
+      <!-- 4 Stat Metric Badges from Brochure -->
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-val">NOV 28</div>
+          <div class="stat-lbl">Date (Saturday)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">9AM–7PM</div>
+          <div class="stat-lbl">Timings</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val" style="font-size: clamp(13px, 2.2vw, 17px); letter-spacing: -0.01em;">Guntur</div>
+          <div class="stat-lbl">Location</div>
+        </div>
+        <div class="stat-card" style="border-color: rgba(255,215,0,0.35); background: rgba(255,215,0,0.06);">
+          <div class="stat-val" style="color:#FFD700;">&#8377;2,999/-</div>
+          <div class="stat-lbl">Entry Fee</div>
+        </div>
+      </div>
+
+      <!-- Venue Address Notice -->
+      <a href="https://maps.google.com/?q=Guntur,Andhra+Pradesh" target="_blank" rel="noopener" class="venue-pill"
+        style="text-decoration: none; cursor: pointer;">
+        <span class="venue-dot"></span>
+        <span>&#128205; <strong>Guntur, Andhra Pradesh</strong> &mdash; Tap to open in Google Maps</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; margin-left: 4px;">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+          <polyline points="15 3 21 3 21 9" />
+          <line x1="10" y1="14" x2="21" y2="3" />
+        </svg>
+      </a>
+
+      <!-- Venue Image Card (Guntur) -->
+      <a href="https://maps.google.com/?q=Guntur,Andhra+Pradesh" target="_blank" rel="noopener" class="venue-img-card">
+        <div style="width:100%;height:100%;min-height:200px;background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 40%,#1e4d7b 70%,#0f2744 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:30px;">
+  <div style="font-size:48px;">🏙️</div>
+  <div style="font-size:18px;font-weight:800;color:#fff;letter-spacing:-0.02em;text-align:center;">Guntur City</div>
+  <div style="font-size:13px;color:rgba(255,255,255,0.65);text-align:center;">Andhra Pradesh, India</div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:6px;">
+    <span style="background:rgba(56,189,248,0.2);border:1px solid rgba(56,189,248,0.4);color:#38BDF8;padding:3px 10px;border-radius:20px;font-size:11px;">🌶️ Chilli Capital</span>
+    <span style="background:rgba(167,139,250,0.2);border:1px solid rgba(167,139,250,0.4);color:#A78BFA;padding:3px 10px;border-radius:20px;font-size:11px;">📍 Workshop Venue</span>
+  </div>
+</div>
+        <div class="venue-img-overlay"></div>
+        <div class="venue-img-info">
+          <div>
+            <div class="venue-img-name">&#127970; Guntur City</div>
+            <div class="venue-img-sub">Guntur, Andhra Pradesh &bull; Workshop Venue</div>
+          </div>
+          <span class="venue-img-map-btn">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Open Maps
+          </span>
+        </div>
+      </a>
+
+      <!-- Pricing Box -->
+      <div class="hero-price-box">
+        <span class="price-now">&#8377;2,999</span>
+        <span class="price-tag">&#x2713; Lunch &amp; Snacks Included</span>
+      </div>
+
+      <div>
+        <a href="register.html" class="cta-button">Register Now &#x2192;</a>
+        <p class="cta-hint">&#9889; Limited seats to ensure personalized 1-on-1 practical training.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== POPUP NOTIFICATION (CENTERED ON SCREEN) ===== -->
+  <div id="popupOverlay"></div>
+  <div id="popupNotif" role="alert" aria-live="polite">
+    <div class="popup-card">
+      <div class="popup-head">
+        <img src="logo.png" alt="Creative Craft Media" class="popup-logo">
+        <span class="popup-time">now</span>
+        <button class="popup-close" id="popupClose" aria-label="Dismiss">&#x2715;</button>
+      </div>
+      <p class="popup-title">Guntur Exclusive! &#x1F44B;</p>
+      <p class="popup-body">
+        Nov 28, 2026 –Don't miss the session!
+        <span class="item-line">&#128200; <strong>Meta Ads Live Campaign Creation</strong></span>
+        <span class="item-line">&#129302; <strong>AI Film-Making Workshop</strong></span>
+        <span class="item-line">&#129302; <strong>Claude AI Tools –Highlighted!</strong></span>
+      </p>
+      <div class="popup-tags">
+        <a href="#curriculum" class="popup-tag">Meta Ads</a>
+        <a href="#curriculum" class="popup-tag">AI Films</a>
+        <a href="#curriculum" class="popup-tag">Learn</a>
+        <a href="#curriculum" class="popup-tag">Create</a>
+        <a href="register.html" class="popup-tag">Register &#x1F680;</a>
+      </div>
+      <a href="register.html" class="popup-register-btn" id="popupRegisterBtn">Register Now &#x2192;</a>
+      <div class="popup-progress">
+        <div class="popup-progress-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ABOUT SECTION
+       ========================================================================== -->
+  <section id="about">
+    <div class="wrap">
+      <div class="glass-card about-card">
+        <p class="about-tagline">Shoot &bull; Cinematic &bull; Edit &bull; Iconic</p>
+        <h3>About Creative Craft Media</h3>
+        <p>
+          Creative Craft Media is a creative media organization delivering Digital Branding Services for brands,
+          Instant Shoot Services for individuals, and professional training in Content Creation, AI Filmmaking,
+          and Digital Marketing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CURRICULUM SECTION
+       ========================================================================== */
+  -->
+  <section id="curriculum">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-head-tag">Curriculum Breakdown</span>
+        <h2>What this workshop covers</h2>
+        <p>An exclusive 1-day industry-oriented curriculum focused on <strong style="color:#fff;">Meta Ads Campaign
+            Creation</strong> and <strong style="color:#fff;">AI Film-Making</strong> with real tools and practical
+          application.</p>
+      </div>
+
+      <div class="curr-grid">
+        <!-- Module 1: AI Film-Making -->
+        <div class="glass-card curr-card">
+          <div class="curr-img-wrap">
+            <img src="ai-filmmaking-visual.jpg" alt="AI Film-Making Workshop" class="curr-img" loading="lazy">
+            <div class="curr-img-overlay"></div>
+          </div>
+          <div class="curr-badge-icon"
+            style="background: rgba(139,92,246,0.15); border-color: rgba(139,92,246,0.4); box-shadow: 0 0 20px rgba(139,92,246,0.2);">
+            &#129302;</div>
+          <h3>AI Film-Making <span style="color: var(--accent-cyan);">Practical Workflow</span></h3>
+          <p>Learn cutting-edge AI video generation tools, avatars, and practical filmmaking workflows for content
+            creation.</p>
+          <ul class="curr-list">
+            <li><span class="curr-list-check">&#x2713;</span><span>AI Filmmaking Foundations &amp; Workflows</span></li>
+            <li><span class="curr-list-check">&#x2713;</span><span>AI Video Generation Tools</span></li>
+            <li><span class="curr-list-check">&#x2713;</span><span>AI Avatar Generation &amp; Lip Sync</span></li>
+            <li><span class="curr-list-check">&#x2713;</span><span>AI Voice Over &amp; Audio Synthesis</span></li>
+            <li><span class="curr-list-check">&#x2713;</span><span>AI-Powered Content Pipelines</span></li>
+            <li><span class="curr-list-check">&#x2713;</span><span>Real-Time Practical Hands-On Sessions</span></li>
+          </ul>
+        </div>
+
+        <!-- Module 2: Meta Ads HIGHLIGHTED -->
+        <div class="glass-card curr-card"
+          style="border-color: rgba(255,215,0,0.35); box-shadow: 0 0 30px rgba(255,215,0,0.12), var(--shadow-glass); background: linear-gradient(160deg, rgba(255,215,0,0.07) 0%, rgba(12,12,15,0.78) 60%);">
+          <div class="curr-img-wrap">
+            <img src="meta-ads-visual.jpg" alt="Meta Ads Campaign Creation" class="curr-img" loading="lazy">
+            <div class="curr-img-overlay"
+              style="background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(255,165,0,0.05) 100%);"></div>
+            <div
+              style="position:absolute; top:12px; left:12px; background:linear-gradient(135deg,#FFD700,#FFA500); color:#000; font-size:10px; font-weight:900; letter-spacing:0.1em; text-transform:uppercase; padding:4px 12px; border-radius:99px; z-index:2;">
+              &#11088; HIGHLIGHTED MODULE</div>
+          </div>
+          <div
+            style="position:absolute; top:18px; right:18px; background: linear-gradient(135deg,#FFD700,#FFA500); color:#000; font-size:10px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; padding:4px 12px; border-radius:99px;">
+            â­ Highlighted</div>
+          <div class="curr-badge-icon"
+            style="background: rgba(255,215,0,0.15); border-color: rgba(255,215,0,0.5); box-shadow: 0 0 24px rgba(255,215,0,0.3); font-size:30px;">
+            &#128200;</div>
+          <h3 style="color:#FFD700;">Meta Ads <span style="color:#FFA500;">Live Campaign Creation</span></h3>
+          <p>Learn to setup, target, and optimise real Meta Ads campaigns live –the complete end-to-end practical
+            session.</p>
+          <ul class="curr-list">
+            <li><span class="curr-list-check"
+                style="background:rgba(255,215,0,0.2); border-color:#FFD700; color:#FFD700;">&#x2713;</span><span>Meta
+                Ads Setup &amp; Account Configuration</span></li>
+            <li><span class="curr-list-check"
+                style="background:rgba(255,215,0,0.2); border-color:#FFD700; color:#FFD700;">&#x2713;</span><span>Audience
+                Targeting &amp; Segmentation</span></li>
+            <li><span class="curr-list-check"
+                style="background:rgba(255,215,0,0.2); border-color:#FFD700; color:#FFD700;">&#x2713;</span><span>Campaign
+                Creation (Facebook &amp; Instagram Ads)</span></li>
+            <li><span class="curr-list-check"
+                style="background:rgba(255,215,0,0.2); border-color:#FFD700; color:#FFD700;">&#x2713;</span><span>Ad
+                Creatives &amp; Copywriting</span></li>
+            <li><span class="curr-list-check"
+                style="background:rgba(255,215,0,0.2); border-color:#FFD700; color:#FFD700;">&#x2713;</span><span>Campaign
+                Optimisation &amp; Scaling</span></li>
+            <li><span class="curr-list-check"
+                style="background:rgba(255,215,0,0.2); border-color:#FFD700; color:#FFD700;">&#x2713;</span><span>Live
+                Campaign Launch &amp; Analytics</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- All Practical Modules -->
+      <h4 class="topics-header">All Official Practical Modules</h4>
+      <div class="topics-grid">
+        <div class="topic-pill"><span class="topic-dot"></span><span class="topic-text">AI Filmmaking Foundations</span>
+        </div>
+        <div class="topic-pill"><span class="topic-dot"></span><span class="topic-text">AI Video Generation Tools</span>
+        </div>
+        <div class="topic-pill"><span class="topic-dot"></span><span class="topic-text">AI Avatar Generation &amp; Lip
+            Sync</span></div>
+        <div class="topic-pill"><span class="topic-dot"></span><span class="topic-text">AI Voice Over &amp; Audio
+            Synthesis</span></div>
+        <div class="topic-pill"><span class="topic-dot"></span><span class="topic-text">AI-Powered Content
+            Pipelines</span></div>
+        <div class="topic-pill" style="border-color:rgba(255,215,0,0.4); background:rgba(255,215,0,0.07);"><span
+            class="topic-dot" style="background:#FFD700; box-shadow:0 0 10px #FFD700;"></span><span class="topic-text"
+            style="color:#FFD700; font-weight:700;">Meta Ads Setup &amp; Configuration</span></div>
+        <div class="topic-pill" style="border-color:rgba(255,215,0,0.4); background:rgba(255,215,0,0.07);"><span
+            class="topic-dot" style="background:#FFD700; box-shadow:0 0 10px #FFD700;"></span><span class="topic-text"
+            style="color:#FFD700; font-weight:700;">Audience Targeting &amp; Segmentation</span></div>
+        <div class="topic-pill" style="border-color:rgba(255,215,0,0.4); background:rgba(255,215,0,0.07);"><span
+            class="topic-dot" style="background:#FFD700; box-shadow:0 0 10px #FFD700;"></span><span class="topic-text"
+            style="color:#FFD700; font-weight:700;">Campaign Creation (Facebook &amp; Instagram)</span></div>
+        <div class="topic-pill" style="border-color:rgba(255,215,0,0.4); background:rgba(255,215,0,0.07);"><span
+            class="topic-dot" style="background:#FFD700; box-shadow:0 0 10px #FFD700;"></span><span class="topic-text"
+            style="color:#FFD700; font-weight:700;">Ad Creatives &amp; Copywriting</span></div>
+        <div class="topic-pill" style="border-color:rgba(255,215,0,0.4); background:rgba(255,215,0,0.07);"><span
+            class="topic-dot" style="background:#FFD700; box-shadow:0 0 10px #FFD700;"></span><span class="topic-text"
+            style="color:#FFD700; font-weight:700;">Campaign Optimisation &amp; Scaling</span></div>
+        <div class="topic-pill" style="border-color:rgba(255,215,0,0.4); background:rgba(255,215,0,0.07);"><span
+            class="topic-dot" style="background:#FFD700; box-shadow:0 0 10px #FFD700;"></span><span class="topic-text"
+            style="color:#FFD700; font-weight:700;">Live Campaign Launch &amp; Analytics</span></div>
+        <div class="topic-pill" style="border-color:rgba(255,107,53,0.4); background:rgba(255,107,53,0.07);"><span
+            class="topic-dot" style="background:#FF9B6B; box-shadow:0 0 10px #FF9B6B;"></span><span class="topic-text"
+            style="color:#FF9B6B; font-weight:700;">&#11088; Claude AI –Ad Copywriting</span></div>
+        <div class="topic-pill" style="border-color:rgba(255,107,53,0.4); background:rgba(255,107,53,0.07);"><span
+            class="topic-dot" style="background:#FF9B6B; box-shadow:0 0 10px #FF9B6B;"></span><span class="topic-text"
+            style="color:#FF9B6B; font-weight:700;">&#11088; Claude AI –Video Script Generation</span></div>
+        <div class="topic-pill"><span class="topic-dot"></span><span class="topic-text">Content Creation Career
+            Opportunities</span></div>
+        <div class="topic-pill"><span class="topic-dot"></span><span class="topic-text">Creative Craft Collaboration
+            Opportunities</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       META ADS SPOTLIGHT SECTION (FULL-WIDTH IMAGE FEATURE)
+       ========================================================================== -->
+  <section id="meta-ads-spotlight" style="padding: 60px 0;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-head-tag" style="color:#FFD700;">&#11088; Star Module</span>
+        <h2>Master <span style="color:#FFD700;">Meta Ads</span> –Live Campaign Creation</h2>
+        <p>The most in-demand digital skill of 2026. Learn to run real Facebook &amp; Instagram ad campaigns from
+          scratch –targeting, creatives, launch, and optimisation all in one day.</p>
+      </div>
+
+      <!-- Full-Width Banner Image -->
+      <div class="meta-spotlight-img-wrap">
+        <img src="meta-ads-banner.jpg" alt="Meta Ads Live Campaign Creation Workshop" class="meta-spotlight-img"
+          loading="lazy">
+        <div class="meta-spotlight-overlay"></div>
+        <div class="meta-spotlight-badge">&#128200; Meta Ads &amp; AI Film-Making Workshop &bull; Nov 28, 2026 &bull;
+          Guntur</div>
+      </div>
+
+      <!-- 3 Feature Highlight Cards -->
+      <div class="meta-feat-grid">
+        <div class="meta-feat-card">
+          <div class="meta-feat-icon" style="background:rgba(255,215,0,0.15); border-color:rgba(255,215,0,0.4);">
+            &#127919;</div>
+          <h4>Precision Targeting</h4>
+          <p>Learn to define the perfect audience with interest, behavior &amp; lookalike targeting for maximum ROI.</p>
+        </div>
+        <div class="meta-feat-card"
+          style="border-color:rgba(255,215,0,0.35); background:linear-gradient(160deg,rgba(255,215,0,0.07),rgba(12,12,15,0.9));">
+          <div class="meta-feat-icon" style="background:rgba(255,215,0,0.2); border-color:#FFD700;">&#128202;</div>
+          <h4 style="color:#FFD700;">Live Campaign Launch</h4>
+          <p>Create, launch, and monitor a real Meta Ads campaign during the workshop –hands-on, live practice.</p>
+        </div>
+        <div class="meta-feat-card">
+          <div class="meta-feat-icon" style="background:rgba(255,215,0,0.15); border-color:rgba(255,215,0,0.4);">
+            &#128640;</div>
+          <h4>Scale &amp; Optimise</h4>
+          <p>Understand campaign scaling, A/B testing, budget optimization, and reading analytics to grow results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CLAUDE AI SPOTLIGHT SECTION
+       ========================================================================== -->
+  <section class="claude-spotlight-section" id="claude-ai">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="claude-badge-pill">&#129302; Exclusive AI Feature</span>
+        <h2>Harness the Power of <span class="claude-highlight">Claude AI</span></h2>
+        <p>Discover Anthropic's Claude AI –the most capable conversational AI for content creation, scripting, ad copywriting, and filmmaking workflows.</p>
+      </div>
+
+      <!-- Claude Hero Card -->
+      <div class="claude-hero-card glass-card">
+        <div class="claude-logo-wrap">&#129302;</div>
+        <h3 style="font-size: clamp(22px,3.5vw,32px); margin-bottom: 14px;">
+          <span class="claude-highlight">Claude AI</span> –Your Creative Co-Pilot
+        </h3>
+        <p style="color: var(--text-muted); font-size: 16px; max-width: 640px; margin: 0 auto 10px; line-height: 1.7;">
+          In this exclusive module, you'll learn how to use <strong style="color:#FF9B6B;">Claude AI by Anthropic</strong> to supercharge your ad campaigns, generate compelling content, write video scripts, and automate your creative workflows.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:18px;">
+          <span style="background:rgba(255,107,53,0.12); border:1px solid rgba(255,107,53,0.35); border-radius:99px; padding:6px 16px; font-size:12px; font-weight:700; color:#FF9B6B;">Ad Copywriting</span>
+          <span style="background:rgba(255,107,53,0.12); border:1px solid rgba(255,107,53,0.35); border-radius:99px; padding:6px 16px; font-size:12px; font-weight:700; color:#FF9B6B;">Script Generation</span>
+          <span style="background:rgba(255,107,53,0.12); border:1px solid rgba(255,107,53,0.35); border-radius:99px; padding:6px 16px; font-size:12px; font-weight:700; color:#FF9B6B;">Content Strategy</span>
+          <span style="background:rgba(255,107,53,0.12); border:1px solid rgba(255,107,53,0.35); border-radius:99px; padding:6px 16px; font-size:12px; font-weight:700; color:#FF9B6B;">Campaign Ideas</span>
+          <span style="background:rgba(255,107,53,0.12); border:1px solid rgba(255,107,53,0.35); border-radius:99px; padding:6px 16px; font-size:12px; font-weight:700; color:#FF9B6B;">Prompt Engineering</span>
+        </div>
+      </div>
+
+      <!-- Claude 3 Feature Cards -->
+      <div class="claude-feat-grid">
+        <div class="claude-feat-item">
+          <div class="claude-feat-icon">&#9997;&#65039;</div>
+          <h4>AI Copywriting</h4>
+          <p>Generate high-converting Meta Ads copy, headlines, and CTAs using Claude AI in seconds.</p>
+        </div>
+        <div class="claude-feat-item" style="border-color:rgba(255,107,53,0.4); background:rgba(255,107,53,0.1);">
+          <div class="claude-feat-icon">&#127916;</div>
+          <h4>Video Script Writer</h4>
+          <p>Create professional cinematic scripts, narrations, and storyboards with Claude's creative intelligence.</p>
+        </div>
+        <div class="claude-feat-item">
+          <div class="claude-feat-icon">&#128161;</div>
+          <h4>Content Strategy</h4>
+          <p>Build entire content calendars, campaign strategies, and audience briefs powered by Claude AI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GUNTUR CITY SHOWCASE
+       ========================================================================== -->
+  <section class="guntur-gallery-section" id="guntur">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-head-tag">&#127968; Workshop City</span>
+        <h2>Happening in <span class="gradient-text">Guntur</span></h2>
+        <p>Join us in the heart of Andhra Pradesh –Guntur, the city of chillis, culture, and creativity.</p>
+      </div>
+
+      <div class="guntur-img-grid">
+        <!-- Featured / Large -->
+        <div class="guntur-img-card guntur-img-featured">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Guntur_city.jpg/800px-Guntur_city.jpg"
+            alt="Guntur City"
+            onerror="this.parentElement.innerHTML='<div class=\'guntur-img-placeholder\'><span>&#127961;&#65039;</span><p>Guntur City, Andhra Pradesh</p></div>'">
+          <div class="guntur-img-overlay"></div>
+          <div class="guntur-img-label">&#127748; Guntur City –Andhra Pradesh</div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="guntur-img-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Kondaveedu_Fort.jpg/640px-Kondaveedu_Fort.jpg"
+            alt="Kondaveedu Fort, Guntur"
+            onerror="this.parentElement.innerHTML='<div class=\'guntur-img-placeholder\'><span>&#127963;&#65039;</span><p>Kondaveedu Fort</p></div>'">
+          <div class="guntur-img-overlay"></div>
+          <div class="guntur-img-label">&#127963;&#65039; Kondaveedu Fort</div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="guntur-img-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Undavalli_Caves.JPG/640px-Undavalli_Caves.JPG"
+            alt="Undavalli Caves, Guntur"
+            onerror="this.parentElement.innerHTML='<div class=\'guntur-img-placeholder\'><span>&#128142;</span><p>Undavalli Caves</p></div>'">
+          <div class="guntur-img-overlay"></div>
+          <div class="guntur-img-label">&#128142; Undavalli Caves</div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="guntur-img-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Nagarjuna_Sagar_Dam.jpg/640px-Nagarjuna_Sagar_Dam.jpg"
+            alt="Nagarjuna Sagar Dam near Guntur"
+            onerror="this.parentElement.innerHTML='<div class=\'guntur-img-placeholder\'><span>&#128675;</span><p>Nagarjuna Sagar Dam</p></div>'">
+          <div class="guntur-img-overlay"></div>
+          <div class="guntur-img-label">&#128675; Nagarjuna Sagar Dam</div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="guntur-img-card">
+          <div class="guntur-img-placeholder" style="height:160px;">
+            <span>&#127798;</span>
+            <p>Guntur –The Chilli Capital of India</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- City Info Callout -->
+      <div style="margin-top:28px; display:flex; flex-wrap:wrap; justify-content:center; gap:14px;">
+        <div style="background:rgba(59,130,246,0.08); border:1px solid rgba(59,130,246,0.25); border-radius:var(--radius-md); padding:14px 22px; text-align:center; min-width:140px;">
+          <div style="font-size:22px; margin-bottom:4px;">&#127748;</div>
+          <div style="font-family:var(--font-display); font-size:13px; font-weight:700; color:var(--text-main);">Guntur District</div>
+          <div style="font-size:11px; color:var(--text-muted); margin-top:2px;">Andhra Pradesh</div>
+        </div>
+        <div style="background:rgba(59,130,246,0.08); border:1px solid rgba(59,130,246,0.25); border-radius:var(--radius-md); padding:14px 22px; text-align:center; min-width:140px;">
+          <div style="font-size:22px; margin-bottom:4px;">&#127798;</div>
+          <div style="font-family:var(--font-display); font-size:13px; font-weight:700; color:var(--text-main);">Chilli Capital</div>
+          <div style="font-size:11px; color:var(--text-muted); margin-top:2px;">World Famous</div>
+        </div>
+        <div style="background:rgba(59,130,246,0.08); border:1px solid rgba(59,130,246,0.25); border-radius:var(--radius-md); padding:14px 22px; text-align:center; min-width:140px;">
+          <div style="font-size:22px; margin-bottom:4px;">&#128218;</div>
+          <div style="font-family:var(--font-display); font-size:13px; font-weight:700; color:var(--text-main);">Education Hub</div>
+          <div style="font-size:11px; color:var(--text-muted); margin-top:2px;">Top Institutions</div>
+        </div>
+        <div style="background:rgba(255,215,0,0.08); border:1px solid rgba(255,215,0,0.25); border-radius:var(--radius-md); padding:14px 22px; text-align:center; min-width:140px;">
+          <div style="font-size:22px; margin-bottom:4px;">&#128197;</div>
+          <div style="font-family:var(--font-display); font-size:13px; font-weight:700; color:#FFD700;">Nov 28, 2026</div>
+          <div style="font-size:11px; color:var(--text-muted); margin-top:2px;">Workshop Date</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WHAT TO BRING & DELIVERABLES
+       ========================================================================== -->
+  <section id="deliverables">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-head-tag">Preparation &amp; Takeaways</span>
+        <h2>What to bring &amp; what you receive</h2>
+        <p>Everything you need for the workshop, and everything you take home with your reservation.</p>
+      </div>
+
+      <div class="dual-grid">
+        <!-- What to Bring -->
+        <div class="glass-card bring-card">
+          <h3 class="card-head-title">&#128241; What to Bring</h3>
+          <div class="bring-item">
+            <span class="bring-label">&#128241; Mobile Phone</span>
+            <span class="badge-status mandatory">Mandatory</span>
+          </div>
+          <div class="bring-item">
+            <span class="bring-label">&#128221; Notebook</span>
+            <span class="badge-status recommended">Recommended</span>
+          </div>
+          <div class="bring-item">
+            <span class="bring-label">&#128187; Laptop</span>
+            <span class="badge-status optional">Optional, if available</span>
+          </div>
+        </div>
+
+        <div class="glass-card recv-card">
+          <h3 class="card-head-title">&#127873; You Will Receive</h3>
+          <ul class="recv-list">
+            <li><span class="curr-list-check">&#x2713;</span><span>Official Workshop Certificate</span></li>
+            <li><span class="curr-list-check">&#x2713;</span><span>Lunch &amp; Evening Snacks Included</span></li>
+            <li><span class="curr-list-check">&#x2713;</span><span>Complete practical workshop &amp; all
+                deliverables</span></li>
+            <li><span class="curr-list-check">&#x2713;</span><span>Creative Craft Community support &amp; regional
+                freelance eligibility</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WHO IS THIS WORKSHOP FOR?
+       ========================================================================== -->
+  <section id="audience">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-head-tag">Target Audience</span>
+        <h2>Who is this workshop for?</h2>
+        <p>Designed for creators, professionals, and entrepreneurs seeking to dominate modern short-form video.</p>
+      </div>
+
+      <div class="audience-grid">
+        <div class="audience-card"><span class="audience-emoji">&#127916;</span><span class="audience-name">Content
+            Creators</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#127891;</span><span
+            class="audience-name">Students</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#128188;</span><span
+            class="audience-name">Freelancers</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#128200;</span><span class="audience-name">Digital
+            Marketers</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#128248;</span><span
+            class="audience-name">Photographers</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#127909;</span><span
+            class="audience-name">Videographers</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#128241;</span><span class="audience-name">Social Media
+            Managers</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#127917;</span><span class="audience-name">Aspiring
+            Filmmakers</span></div>
+        <div class="audience-card"><span class="audience-emoji">&#127970;</span><span class="audience-name">Business
+            Owners</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SCHEDULE & TIMINGS
+       ========================================================================== -->
+  <section id="schedule">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-head-tag">Timetable</span>
+        <h2>Date &amp; Timings</h2>
+        <p>Full-day exclusive workshop –plan to be present from start to finish.</p>
+      </div>
+
+      <div class="glass-card schedule-card">
+        <div class="schedule-row">
+          <span class="sched-label">Date</span>
+          <span class="sched-val">November 28, 2026 (Saturday)</span>
+        </div>
+        <div class="schedule-row">
+          <span class="sched-label">Timings</span>
+          <span class="sched-val">9:00 AM &#x2013; 7:00 PM</span>
+        </div>
+        <div class="schedule-row">
+          <span class="sched-label">Check-in</span>
+          <span class="sched-val">Please attend by 8:45 AM for check-in</span>
+        </div>
+        <div class="schedule-row">
+          <span class="sched-label">Lunch Break</span>
+          <span class="sched-val">Afternoon break &nbsp;<span
+              style="background: rgba(16,185,129,0.12); color: #10B981; border: 1px solid rgba(16,185,129,0.3); border-radius: 20px; padding: 2px 10px; font-size: 11.5px; font-weight: 700;">&#x2713;
+              Lunch Provided</span></span>
+        </div>
+        <div class="schedule-row">
+          <span class="sched-label">Evening Snacks</span>
+          <span class="sched-val">Evening break &nbsp;<span
+              style="background: rgba(16,185,129,0.12); color: #10B981; border: 1px solid rgba(16,185,129,0.3); border-radius: 20px; padding: 2px 10px; font-size: 11.5px; font-weight: 700;">&#x2713;
+              Snacks Provided</span></span>
+        </div>
+        <div class="schedule-row">
+          <span class="sched-label">Location</span>
+          <span class="sched-val">Guntur, Andhra Pradesh</span>
+        </div>
+        <div class="schedule-row">
+          <span class="sched-label">Entry Fee</span>
+          <span class="sched-val" style="color:#FFD700; font-weight:800;">&#8377;2,999/- <span
+              style="color:var(--text-muted); font-size:13px; font-weight:500;">(Certificate + Lunch + Snacks
+              Included)</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FREQUENTLY ASKED QUESTIONS
+       ========================================================================== -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-head-tag">FAQ</span>
+        <h2>Frequently asked questions</h2>
+        <p>Clear answers to common questions from registered and prospective participants.</p>
+      </div>
+
+      <div class="faq-stack">
+        <div class="glass-card faq-card">
+          <div class="faq-q"><span class="faq-q-badge">Q1</span>Why should I attend this workshop?</div>
+          <div class="faq-a">It follows a professional, industry-oriented approach &mdash; the exact workflow the
+            Creative Craft Media team uses on real brand projects. You will learn Instant Cinematic Shooting, Instant
+            Editing, AI Filmmaking, Claude AI Tools, and META Ads Campaign Creation &mdash; skills you can apply immediately.</div>
+        </div>
+
+        <div class="glass-card faq-card">
+          <div class="faq-q"><span class="faq-q-badge">Q2</span>Will there be support after the workshop?</div>
+          <div class="faq-a">Yes. You become part of the exclusive Creative Craft Community, and the team continues to
+            assist with concept-related doubts and technical clarifications after the workshop ends.</div>
+        </div>
+
+        <div class="glass-card faq-card">
+          <div class="faq-q"><span class="faq-q-badge">Q3</span>Will there be collaboration opportunities?</div>
+          <div class="faq-a">Yes. Based on your work quality, skills and performance, you may get the opportunity to
+            collaborate with Creative Craft Media as a Registered Freelancer, with eligible freelancers receiving
+            lead-based projects in their region.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VALUE BANNER
+       ========================================================================== -->
+  <div class="wrap">
+    <div class="banner-card">
+      <span class="banner-tag">Limited Seats &bull; November 28, 2026 &bull; Reserve Your Seat Now</span>
+      <h3>META ADS + AI FILM-MAKING + CLAUDE AI. ONE DAY. REAL SKILLS. GUNTUR.</h3>
+      <div class="banner-pillars">
+        <span>&#9889; 1 Day Intensive Training</span>
+          <span>&bull;</span>
+          <span>&#128200; Meta Ads Live Campaigns</span>
+          <span>&bull;</span>
+          <span>&#129302; AI Film-Making</span>
+          <span>&bull;</span>
+          <span>&#129302; Claude AI Tools</span>
+          <span>&bull;</span>
+          <span>&#127891; Certification</span>
+          <span>&bull;</span>
+          <span>&#127860; Lunch &amp; Snacks Included</span>
+          <span>&bull;</span>
+          <span>&#128188; Collaboration Opportunities</span>
+      </div>
+      <a href="register.html" class="cta-button">Register Now &mdash; &#8377;2,999 &#x2192;</a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       DEDICATED REGISTRATION CALLOUT SECTION
+       ========================================================================== -->
+  <section style="padding: 60px 0 100px;">
+    <div class="wrap" style="text-align: center;">
+      <div class="glass-card direct-reg-card"
+        style="border-radius: var(--radius-xl); max-width: 820px; margin: 0 auto; border: 1px solid rgba(59, 130, 246, 0.35); box-shadow: 0 25px 60px -15px rgba(59, 130, 246, 0.2);">
+        <span class="section-head-tag" style="margin-bottom: 16px;">Direct Seat Reservation</span>
+        <h2 style="font-size: clamp(2rem, 4vw, 2.7rem); margin-bottom: 16px;">
+          Ready to Master <span style="color:#FFD700;">Meta Ads</span>, <span class="claude-highlight" style="font-size:inherit;">Claude AI</span> &amp; <span class="gradient-text">AI
+            Film-Making</span>?
+        </h2>
+        <p
+          style="color: var(--text-muted); font-size: 1.08rem; max-width: 620px; margin: 0 auto 32px; line-height: 1.65;">
+          Participant registration and payment verification now take place on our dedicated, secure booking page. Fill
+          in your certificate details, complete payment via UPI QR code, and receive instant confirmation.
+        </p>
+
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
+          <a href="register.html" class="cta-button cta-button-large">
+            Register Now &#x2192;
+          </a>
+          <div
+            style="display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; font-size: 13.5px; color: var(--text-dim); margin-top: 6px;">
+            <span>&#9889; Limited to Small Batch</span>
+            <span>&bull;</span>
+            <span>&#128179; &#8377;2,999 Complete Package</span>
+            <span>&bull;</span>
+            <span>&#128196; Instant Confirmation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer>
+    <div class="wrap">
+      <img src="logo.png" alt="Creative Craft Media" class="footer-logo">
+      <p class="footer-title">Meta Ads &amp; AI Film-Making Workshop</p>
+      <p class="footer-sub">November 28, 2026 (Saturday) &bull; 9:00 AM – 7:00 PM &bull; Guntur</p>
+
+      <div class="footer-links">
+        <a href="tel:8328544117" class="footer-link">&#128222; Call: 8328544117</a>
+        <a href="https://wa.me/918328544117" target="_blank" rel="noopener" class="footer-link">&#128172; WhatsApp:
+          8328544117</a>
+        <a href="https://instagram.com/creative_craft_media_2.0" target="_blank" rel="noopener" class="footer-link">&#128248;
+          IG: @creative_craft_media_2.0</a>
+      </div>
+
+      <p style="font-size: 13px; color: var(--text-dim); margin-top: 8px;">
+        Reach out to <strong>8328544117</strong> for any questions regarding your reservation.
+      </p>
+
+      <!-- Discreet Admin Export Button for Spreadsheet CSV Download -->
+      <div>
+        <button type="button" class="admin-export-btn" id="exportCsvBtn"
+          title="Download all registered participants from this browser as Excel / CSV">
+
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       STATIC BOTTOM CTA BAR ("REGISTER NOW" DOCKED AT BOTTOM)
+       ========================================================================== -->
+  <div class="static-bottom-bar" id="staticBottomBar">
+    <div class="static-bottom-inner">
+      <div class="static-bottom-info">
+        <div class="static-bottom-title">
+          <span>Meta Ads &amp; AI Film-Making</span>
+          <span class="static-bottom-badge">Nov 28 &bull; Guntur</span>
+        </div>
+        <div class="static-bottom-sub">
+          <span>&#9889; 1-Day Workshop</span>
+          <span>&bull;</span>
+          <span>Fee: <strong>&#8377;2,999</strong></span>
+          <span class="static-sub-extra">&bull; Lunch &amp; Snacks Included</span>
+        </div>
+      </div>
+      <a href="register.html" class="static-bottom-btn" id="staticRegisterBtn">
+        <span>Register Now</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Floating Toast Banner -->
+  <div class="toast-banner" id="toastBanner"></div>
+
+  <!-- ==========================================================================
+       SCRIPTS: SPREADSHEET SUBMISSION & INTERACTION
+       ========================================================================== -->
+  <script>
+    const toastBanner = document.getElementById('toastBanner');
+
+    // Toast notification helper
+    function showToast(msg, duration) {
+      duration = duration || 3400;
+      toastBanner.textContent = msg;
+      toastBanner.classList.add('show');
+      clearTimeout(showToast._t);
+      showToast._t = setTimeout(function () {
+        toastBanner.classList.remove('show');
+      }, duration);
+    }
+
+    // Admin: Export All Registrations to Excel / CSV with UTF-8 BOM
+    document.getElementById('exportCsvBtn').addEventListener('click', function () {
+      try {
+        var list = JSON.parse(localStorage.getItem('ccm_workshop_registrations') || '[]');
+        if (list.length === 0) {
+          showToast('No registrations stored in this browser yet.');
+          return;
+        }
+
+        var headers = [
+          "Timestamp",
+          "Registration ID",
+          "Status",
+          "Full Name",
+          "Mobile",
+          "Email",
+          "Category / Role",
+          "Knowledge Level",
+          "Location / City",
+          "Freelance Interest",
+          "Workshop Fee",
+          "UTR / Payment Reference",
+          "Screenshot 1 Attached",
+          "Screenshot 2 Attached"
+        ];
+        var csvRows = [headers.map(function (h) { return '"' + h.replace(/"/g, '""') + '"'; }).join(",")];
+
+        list.forEach(function (item) {
+          var row = [
+            item.timestamp || '',
+            item.regId || '',
+            item.status || 'Confirmed - Payment Submitted',
+            item.fullName || '',
+            item.mobile || '',
+            item.email || '',
+            item.category || '',
+            item.knowledge || '',
+            item.location || '',
+            item.freelance || '',
+            item.fee || 'â‚¹2,999',
+            item.utr || '',
+            item.receiptFilename || (item.receiptBase64 ? 'Yes (Attached)' : 'None'),
+            item.receipt2Filename || (item.receipt2Base64 ? 'Yes (Attached)' : 'None')
+          ];
+          csvRows.push(row.map(function (val) {
+            return '"' + String(val).replace(/"/g, '""') + '"';
+          }).join(","));
+        });
+
+        // Add UTF-8 BOM so Microsoft Excel opens cleanly without encoding issues
+        var BOM = "\uFEFF";
+        var blob = new Blob([BOM + csvRows.join("\r\n")], { type: "text/csv;charset=utf-8;" });
+        var url = URL.createObjectURL(blob);
+        var link = document.createElement("a");
+        link.setAttribute("href", url);
+        link.setAttribute("download", "ccm_guntur_registrations_" + new Date().toISOString().slice(0, 10) + ".csv");
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        showToast('Exported ' + list.length + ' registration(s) to Excel / CSV!');
+      } catch (err) {
+        showToast('Failed to export CSV: ' + err.message);
+      }
+    });
+
+    // Popup Notification Controller (Centered on Screen)
+    (function () {
+      var popup = document.getElementById('popupNotif');
+      var overlay = document.getElementById('popupOverlay');
+      var closer = document.getElementById('popupClose');
+      var autoTimer;
+
+      if (!popup || !overlay) return;
+
+      // If user already clicked a popup link and was redirected here, hide popup immediately
+      if (sessionStorage.getItem('ccm_popup_clicked') === '1') {
+        sessionStorage.removeItem('ccm_popup_clicked');
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+        return;
+      }
+
+      function dismiss() {
+        clearTimeout(autoTimer);
+        popup.classList.add('hiding');
+        overlay.classList.add('hiding');
+        popup.addEventListener('animationend', function () { popup.style.display = 'none'; }, { once: true });
+        overlay.addEventListener('animationend', function () { overlay.style.display = 'none'; }, { once: true });
+      }
+
+      if (closer) closer.addEventListener('click', dismiss);
+      overlay.addEventListener('click', dismiss);
+
+      popup.querySelectorAll('.popup-tag, #popupRegisterBtn').forEach(function (tag) {
+        tag.addEventListener('click', function () {
+          // Mark that popup was clicked so it won't reappear after redirect
+          sessionStorage.setItem('ccm_popup_clicked', '1');
+          setTimeout(dismiss, 300);
+        });
+      });
+
+      // Auto-dismiss after 7.5 seconds
+      autoTimer = setTimeout(dismiss, 7500);
+    })();
+
+    // Sticky Navbar Scroll State
+    function updateNavScroll() {
+      var nav = document.querySelector('.nav');
+      if (nav) {
+        if (window.scrollY > 10) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      }
+    }
+    window.addEventListener('scroll', updateNavScroll, { passive: true });
+    updateNavScroll();
+  </script>
+
+</body>
+
+</html>
